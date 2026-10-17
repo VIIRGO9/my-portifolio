@@ -1,79 +1,119 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Personal Portfolio</title>
+  <meta name="description" content="Augustino Erick — Cybersecurity Engineer & Technology Enthusiast. Portfolio showcasing projects, skills and contact information.">
+  <title>Augustino Erick — Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <a class="logo" href="#">MY PORTFOLIO</a>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#home">Augustino Erick</a>
+      <button class="nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+        <span class="sr-only">Menu</span>
+        ☰
+      </button>
+      <nav id="primary-navigation" class="primary-nav" aria-label="Primary navigation">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <a class="muted" href="https://github.com/VIIRGO9" target="_blank" rel="noopener">GitHub</a>
+      </nav>
+    </div>
   </header>
 
   <main>
     <section id="home" class="hero">
-      <p class="eyebrow">WELCOME TO MY PORTFOLIO</p>
-      <h1>Hello, I'm <span>Augustino Erick</span></h1>
-      <h2>Cybersecurity Engineer &amp; Technology Enthusiast</h2>
-      <p>I build projects, explore technology, and develop solutions
-         through continuous learning.</p>
-      <a class="button" href="#projects">Explore My Work</a>
+      <div class="container">
+        <p class="eyebrow">WELCOME TO MY PORTFOLIO</p>
+        <h1>Hello — I'm <span>Augustino Erick</span></h1>
+        <h2>Cybersecurity Engineer &amp; Technology Enthusiast</h2>
+        <p>I design and build secure systems, investigate incidents, and create tools that make security practical. Below are selected projects, skills, and ways to contact me.</p>
+        <p class="cta-row">
+          <a class="button" href="#projects">Explore My Work</a>
+          <a class="button alt" href="mailto:augustinoerick5@gmail.com">Email Me</a>
+        </p>
+      </div>
     </section>
 
     <section id="about" class="section">
-      <h2>About Me</h2>
-      <p>I am passionate about technology, cybersecurity, and
-         digital innovation. This portfolio showcases my skills,
-         projects, and professional journey.</p>
+      <div class="container">
+        <h2>About Me</h2>
+        <p>I'm a cybersecurity professional in training with experience in digital forensics, vulnerability assessment, and automation using Python. I enjoy learning new technologies and applying them to real-world problems.</p>
+      </div>
     </section>
 
     <section id="skills" class="section">
-      <h2>My Skills</h2>
-      <div class="cards">
-        <article class="card">Cybersecurity</article>
-        <article class="card">Digital Forensics</article>
-        <article class="card">HTML, CSS &amp; JavaScript</article>
-        <article class="card">Python &amp; Machine Learning</article>
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Cybersecurity</h3>
+            <p>Threat modeling, vulnerability assessment, network security and hardening.</p>
+          </article>
+          <article class="card">
+            <h3>Digital Forensics</h3>
+            <p>Disk and memory analysis, tool usage and evidence collection best-practices.</p>
+          </article>
+          <article class="card">
+            <h3>Full‑stack Web</h3>
+            <p>HTML, CSS, JavaScript — building responsive, accessible frontends.</p>
+          </article>
+          <article class="card">
+            <h3>Python &amp; ML</h3>
+            <p>Scripting, automation and basic machine learning for data-driven solutions.</p>
+          </article>
+        </div>
       </div>
     </section>
 
     <section id="projects" class="section">
-      <h2>Featured Projects</h2>
-      <div class="cards">
-        <article class="card">
-          <h3>Sales Forecasting</h3>
-          <p>A machine learning project for predicting sales.</p>
-        </article>
-        <article class="card">
-          <h3>Portfolio Website</h3>
-          <p>A personal website built using web technologies.</p>
-        </article>
+      <div class="container">
+        <h2>Selected Projects</h2>
+        <div class="cards projects">
+          <article class="card">
+            <h3>Sales Forecasting</h3>
+            <p>Machine learning model to forecast sales and help plan inventory. (Python, scikit-learn)</p>
+            <p><a href="#" aria-label="Sales Forecasting repo or demo">View project</a></p>
+          </article>
+
+          <article class="card">
+            <h3>Portfolio Website</h3>
+            <p>This site — a lightweight, accessible portfolio to showcase my work.</p>
+            <p><a href="https://github.com/VIIRGO9/my-portifolio" target="_blank" rel="noopener">View source on GitHub</a></p>
+          </article>
+
+          <article class="card">
+            <h3>Tools &amp; Scripts</h3>
+            <p>Collection of small automation and analysis scripts (Python).</p>
+            <p><a href="#" aria-label="Tools and scripts repo">View project</a></p>
+          </article>
+        </div>
       </div>
     </section>
 
-    <section id="contact" class="section">
-      <h2>Let's Connect</h2>
-      <p>Interested in my work? Get in touch.</p>
-      <a class="button" href="augustinoerick5@gmail.com">
-        Email Me
-      </a>
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>If you'd like to work together or have questions, send me an email or connect on GitHub.</p>
+        <p class="contact-links">
+          <a class="button" href="mailto:augustinoerick5@gmail.com">Email: augustinoerick5@gmail.com</a>
+          <a class="button alt" href="https://github.com/VIIRGO9" target="_blank" rel="noopener">GitHub</a>
+        </p>
+      </div>
     </section>
   </main>
 
   <footer>
-    <p>&copy; <span id="year"></span> Your Name. All rights reserved.</p>
+    <div class="container">
+      <p>&copy; <span id="year"></span> Augustino Erick. All rights reserved.</p>
+    </div>
   </footer>
 
   <script src="script.js"></script>
 </body>
 </html>
-
